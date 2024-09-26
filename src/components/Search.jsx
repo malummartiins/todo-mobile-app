@@ -5,7 +5,7 @@ import styles from '../../AppStyles.js'
 const Search = ({ search, setSearch }) => {
   return (
     <View style={styles.search}>
-      <Text style={styles.subtitle}>Pesquisar:</Text>
+      <Text style={styles.subtitle}>Pesquisar tarefa:</Text>
       <TextInput
         style={styles.input}
         value={search}

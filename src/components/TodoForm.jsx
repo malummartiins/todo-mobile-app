@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, Button } from 'react-native';
+import { View, Text, TextInput, TouchableOpacity  } from 'react-native';
 import { Picker } from '@react-native-picker/picker';
 import styles from '../../AppStyles.js';
 
@@ -24,7 +24,7 @@ const TodoForm = ({ addTodo }) => {
         value={value}
         onChangeText={(text) => setValue(text)}
       />
-
+  
       <Picker
         selectedValue={category}
         onValueChange={(itemValue) => setCategory(itemValue)}
@@ -36,8 +36,10 @@ const TodoForm = ({ addTodo }) => {
         <Picker.Item label="Pessoal" value="Pessoal" />
         <Picker.Item label="Estudos" value="Estudos" />
       </Picker>
-
-      <Button title="Criar tarefa" onPress={handleSubmit} />
+  
+      <TouchableOpacity style={styles.createButton} onPress={handleSubmit}>
+        <Text style={styles.buttonText}>Criar tarefa</Text>
+      </TouchableOpacity>
     </View>
   );
 };

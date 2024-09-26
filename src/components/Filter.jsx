@@ -1,7 +1,7 @@
-import React from 'react';
-import { View, Text, Button } from 'react-native';
-import { Picker } from '@react-native-picker/picker';
-import styles from '../../AppStyles.js'
+import React from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+import { Picker } from "@react-native-picker/picker";
+import styles from "../../AppStyles.js";
 
 const Filter = ({ filter, setFilter, setSort }) => {
   return (
@@ -20,8 +20,18 @@ const Filter = ({ filter, setFilter, setSort }) => {
 
       <Text style={styles.subtitle}>Ordem alfabética:</Text>
       <View style={styles.buttonContainer}>
-        <Button title="Asc" onPress={() => setSort('Asc')} />
-        <Button title="Desc" onPress={() => setSort('Desc')} />
+        <TouchableOpacity
+          style={styles.customButton}
+          onPress={() => setSort("Asc")}
+        >
+          <Text style={styles.buttonText}>Asc</Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.customButton}
+          onPress={() => setSort("Desc")}
+        >
+          <Text style={styles.buttonText}>Desc</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );

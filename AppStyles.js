@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f4f4f4',
     paddingTop: 20, 
     padding: 20,
+    
   },
   title: {
     textAlign: 'center',
@@ -15,6 +16,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginBottom: 20,
     marginTop:80,
+    color: "#ba7b7c",
   },
   filterContainer: {
     marginBottom: 20,
@@ -29,10 +31,10 @@ const styles = StyleSheet.create({
   picker: {
     marginBottom: 10,
     borderWidth: 1,
-    borderColor: '#ff0000',
+    borderColor: '#ba7b7c',
     borderRadius: 3,
-    paddingVertical: 5,  // Diminui o padding interno vertical
-    paddingHorizontal: 10, // Ajusta o padding horizontal para manter espaçamento interno confortável
+    paddingVertical: 5,  
+    paddingHorizontal: 10, 
     width: '100%',
     height: 70,
     
@@ -40,13 +42,24 @@ const styles = StyleSheet.create({
   pickerItem: {
     fontSize: 18,  
     height: 70,
+    
   },
-
   buttonContainer: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     marginBottom: 20,
   },
+  
+  customButton: {
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderWidth: 2, 
+    borderColor: '#ba7b7c', 
+    borderRadius: 5,
+    backgroundColor: '#d7a9a9', 
+  },
+  
+ 
   searchContainer: {
     marginBottom: 20,
     paddingBottom: 20,
@@ -88,6 +101,7 @@ const styles = StyleSheet.create({
   content: {
     flexDirection: 'row',
     alignItems: 'center',
+    marginLeft: 15,
   },
   category: {
     marginLeft: 10,
@@ -113,11 +127,33 @@ const styles = StyleSheet.create({
   formTitle: {
     fontSize: 20,
     marginBottom: 20,
+    marginTop: 20,
     textAlign: 'center',
+    fontWeight: 'bold',
   },
   subtitle: {
-    fontSize:18,
+    fontSize:16,
     marginBottom: 10,
+    marginLeft: 15,
+  },
+
+  createButton: {
+    backgroundColor: '#8ab364', // tom de verde que gostei 
+    paddingVertical: 12,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    borderWidth: 2,
+    
+    borderColor: '#218838',
+    alignItems: 'center',
+    marginTop: 10,
+  },
+  
+  buttonText: {
+    color: '#fff',
+    fontSize: 16,
+    fontWeight: 'bold',
+    textTransform: 'uppercase', 
   },
 });
 
