@@ -1,143 +1,124 @@
 // AppStyles.js
 import { StyleSheet } from 'react-native';
 
-const AppStyles = StyleSheet.create({
-  app: {
-    margin: 0,
-    marginBottom: 100,
-    backgroundColor: '#e545',
-    padding: 10,
-    borderRadius: 10,
-  },
-  body: {
-    fontFamily: 'Arial, Helvetica, sans-serif', 
+
+const styles = StyleSheet.create({
+  appContainer: {
+    flex: 1,
     backgroundColor: '#f4f4f4',
-    padding: 30,
-    color: '#333',
-   
+    paddingTop: 20, 
+    padding: 20,
   },
   title: {
     textAlign: 'center',
-    fontSize: 24,
+    fontSize: 32, 
     fontWeight: 'bold',
+    marginBottom: 20,
+    marginTop:80,
   },
-  subtitle: {
-    marginBottom: 10,
-    fontSize: 18,
-  },
-  paragraph: {
-    margin: 10,
-    fontSize: 16,
-  },
-  input: {
-    padding: 5,
-    marginBottom: 10,
-    borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 3,
-    width: '100%',
-  },
-  button: {
-    backgroundColor: '#9d673a',
-    color: '#fff',
-    padding: 5,
-    marginRight: 10,
-    borderWidth: 0,
-    borderRadius: 3,
-    cursor: 'pointer',
-    opacity: 0.8,
-  },
-  buttonHover: {
-    opacity: 1,
-  },
-  complete: {
-    backgroundColor: '#5cb85c',
-  },
-  remove: {
-    backgroundColor: '#d9534f',
-  },
-  todoList: {
+  filterContainer: {
     marginBottom: 20,
     paddingBottom: 20,
     borderBottomWidth: 1,
-    borderColor: '#555',
+    borderBottomColor: '#555',
   },
-  todo: {
-    backgroundColor: '#e545',
-    boxShadow: '0 0 10px rgba(0,0,0,0.1)', 
-    padding: 10,
-    marginBottom: 10,
-    borderRadius: 5,
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-  },
-  completed: {
-    backgroundColor: '#d3ffd3',
-  },
-  content: {
-    flex: 1,
-    paddingRight: 10,
-  },
-  category: {
-    color: '#666',
-  },
-  buttons: {
-    flexDirection: 'row',
-    gap: 10, // ajuste conforme necessário
-  },
-  completedText: {
-    textDecorationLine: 'line-through',
-  },
-  normalText: {
-    textDecorationLine: 'none',
-  },
-  // Adicione outros estilos que você precisar
-
-  todoForm: {
-    marginBottom: 20,
-    padding: 20,
-    backgroundColor: '#efefef',
-    borderRadius: 10,
-  },
-  formTitle: {
-    fontSize: 18,
-    marginBottom: 10,
-    textAlign: 'center',
-  },
-  input: {
-    borderWidth: 1,
-    borderColor: '#ddd',
-    marginBottom: 10,
-    padding: 8,
-    borderRadius: 5,
-    width: '100%', // Garantir que o input ocupe a largura total
+  filterLabel: {
+    marginBottom: 5,
+    fontWeight: 'bold',
   },
   picker: {
     marginBottom: 10,
-    height: 50,
+    borderWidth: 1,
+    borderColor: '#ff0000',
+    borderRadius: 3,
+    paddingVertical: 5,  // Diminui o padding interno vertical
+    paddingHorizontal: 10, // Ajusta o padding horizontal para manter espaçamento interno confortável
     width: '100%',
+    height: 70,
+    
   },
-  filter: {
-    borderBottomWidth: 1,
-    borderColor: '#555',
-    marginBottom: 20,
-    paddingBottom: 20,
+  pickerItem: {
+    fontSize: 18,  
+    height: 70,
   },
-  filterOptions: {
+
+  buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     marginBottom: 20,
   },
-  filterOption: {
-    flex: 1,
-    marginRight: 10,
+  searchContainer: {
+    marginBottom: 20,
+    paddingBottom: 20,
+    borderBottomWidth: 1,
+    borderBottomColor: '#555',
+  },
+  searchInput: {
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 3,
+    padding: 8,
+    width: '100%',
+    marginBottom: 10,
+  },
+  todo: {
+    backgroundColor: '#fff',
+    padding: 10,
+    marginBottom: 10,
+    borderRadius: 5,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowOffset: { width: 0, height: 2 },
+  },
+  completed: {
+    backgroundColor: '#d3f9d8', 
+  },
+  normalText: {
+    fontSize: 16,
+    color: '#333', 
+  },
+  completedText: {
+    textDecorationLine: 'line-through',
+    fontSize: 16,
+    color: '#888', 
+  },
+  content: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  category: {
+    marginLeft: 10,
+    fontStyle: 'italic',
+    color: '#555',
+  },
+  buttons: {
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: '#ddd',
+    borderRadius: 3,
+    padding: 10,
+    marginBottom: 10,
+    width: '100%',
+    
+  },
+  todoForm: {
+    paddingBottom: 20,
+  },
+  formTitle: {
+    fontSize: 20,
+    marginBottom: 20,
+    textAlign: 'center',
+  },
+  subtitle: {
+    fontSize:18,
+    marginBottom: 10,
   },
 });
 
-export default AppStyles;
-
-
-
-
+export default styles;

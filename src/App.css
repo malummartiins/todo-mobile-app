@@ -1,4 +1,4 @@
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f4f4f4;
   padding: 30px;
@@ -6,34 +6,33 @@ body{
   background-image: url("./img/bgcoffe.jpg");
   background-size: cover;
   background-position: center;
-
 }
 
-.app{
+.app {
   max-width: 600px;
-  margin:  0 auto 300px;
+  margin: 0 auto 300px;
   background-color: #efefef;
   padding: 20px 30px;
   border-radius: 10px;
 }
 
-h1{
+h1 {
   text-align: center;
 }
 
-h2{
-  margin-bottom:  10px;
+h2 {
+  margin-bottom: 10px;
 }
 
-p{
+p {
   margin: 10px 0;
 }
 
-input{
+input {
   box-sizing: border-box;
 }
 
-button{
+button {
   background-color: #9d673a;
   color: #fff;
   padding: 5px 10px;
@@ -41,32 +40,32 @@ button{
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  opacity: .8;
-  transition: .3s;
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
-button:hover{
+button:hover {
   opacity: 1;
 }
 
-.complete{
+.complete {
   background-color: #5cb85c;
 }
 
-.remove{
+.remove {
   background-color: #d9534f;
 }
 
-.todo-list{
+.todo-list {
   margin-bottom: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #555;
 }
 
-.todo{
+.todo {
   background-color: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  padding:  10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
   display: flex;
@@ -74,31 +73,47 @@ button:hover{
   align-items: center;
 }
 
-.todo-form{
+.todo-form {
   padding-bottom: 1.5rem;
 }
 
-input, select{
+input, select {
   padding: 5px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
   border-radius: 3px;
   width: 100%;
-
 }
 
-.filter, .search{
+/* Estilo do campo de pesquisa */
+.search {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.filter {
   border-bottom: 1px solid #555;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-.filter-options{
+.filter-options {
   display: flex;
   justify-content: space-between;
-  gap: 3rem;
+  gap: 1rem;
 }
 
-.filter-options div{
+.filter-options div {
   flex: 1 1 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.picker {
+  margin-bottom: 10px;
 }

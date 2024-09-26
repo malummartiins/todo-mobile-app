@@ -1,11 +1,13 @@
 import { View, TextInput, Text } from 'react-native';
+import styles from '../../AppStyles.js'
+
 
 const Search = ({ search, setSearch }) => {
   return (
-    <View className="search">
-      <Text>Pesquisar:</Text>
+    <View style={styles.search}>
+      <Text style={styles.subtitle}>Pesquisar:</Text>
       <TextInput
-        style={{ borderWidth: 1, padding: 8 }}
+        style={styles.input}
         value={search}
         onChangeText={(text) => setSearch(text)}
         placeholder="Digite para pesquisar..."

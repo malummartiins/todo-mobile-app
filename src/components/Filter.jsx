@@ -5,22 +5,23 @@ import styles from '../../AppStyles.js'
 
 const Filter = ({ filter, setFilter, setSort }) => {
   return (
-    <View style={styles.filterContainer}>
-      <Text style={styles.filterLabel}>Status:</Text>
+    <View style={styles.filter}>
+      <Text style={styles.subtitle}>Status:</Text>
       <Picker
         selectedValue={filter}
         onValueChange={(itemValue) => setFilter(itemValue)}
         style={styles.picker}
+        itemStyle={styles.pickerItem}
       >
         <Picker.Item label="Todas" value="All" />
         <Picker.Item label="Completas" value="Completed" />
         <Picker.Item label="Incompletas" value="Incomplete" />
       </Picker>
-      
-      <Text style={styles.filterLabel}>Ordem alfabética:</Text>
+
+      <Text style={styles.subtitle}>Ordem alfabética:</Text>
       <View style={styles.buttonContainer}>
-        <Button title="Asc" onPress={() => setSort("Asc")} />
-        <Button title="Desc" onPress={() => setSort("Desc")} />
+        <Button title="Asc" onPress={() => setSort('Asc')} />
+        <Button title="Desc" onPress={() => setSort('Desc')} />
       </View>
     </View>
   );
