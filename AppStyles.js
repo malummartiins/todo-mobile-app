@@ -157,7 +157,7 @@ const styles = StyleSheet.create({
   },
 
   createButton: {
-    backgroundColor: '#8ab364', // tom de verde que gostei 
+    backgroundColor: '#8ab364', 
     paddingVertical: 12,
     paddingHorizontal: 20,
     borderRadius: 5,
