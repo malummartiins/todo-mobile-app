@@ -4,7 +4,7 @@ import Todo from '../todo-mobile-app/src/components/Todo';
 import TodoForm from '../todo-mobile-app/src/components/TodoForm';
 import Search from '../todo-mobile-app/src/components/Search';
 import Filter from '../todo-mobile-app/src/components/Filter';
-import styles from './AppStyles'; // Adicionei um import para estilos, se necessário
+import styles from './AppStyles'; 
 
 function App() {
   const [todos, setTodos] = useState([

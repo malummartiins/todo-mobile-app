@@ -1,4 +1,3 @@
-// AppStyles.js
 import { StyleSheet } from 'react-native';
 
 
@@ -83,14 +82,14 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.4,
     shadowOffset: { width: 0, height: 2 },
   },
   completed: {
     backgroundColor: '#d3f9d8', 
   },
   normalText: {
-    fontSize: 16,
+    fontSize: 18,
     color: '#333', 
   },
   completedText: {
@@ -108,9 +107,28 @@ const styles = StyleSheet.create({
     fontStyle: 'italic',
     color: '#555',
   },
+
+  completeButton: {
+    backgroundColor: '#8ab364', 
+    padding: 10,
+    borderRadius: 5,
+    marginRight: 10,
+  },
+  removeButton: {
+    backgroundColor: '#ba7b7c', 
+    padding: 10,
+    borderRadius: 5,
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+
   buttons: {
     flexDirection: 'row',
     alignItems: 'center',
+    
   },
   input: {
     borderWidth: 1,
@@ -125,11 +143,12 @@ const styles = StyleSheet.create({
     paddingBottom: 20,
   },
   formTitle: {
-    fontSize: 20,
+    fontSize: 24,
     marginBottom: 20,
     marginTop: 20,
     textAlign: 'center',
     fontWeight: 'bold',
+    color: '#ba7b7c'
   },
   subtitle: {
     fontSize:16,
@@ -149,12 +168,6 @@ const styles = StyleSheet.create({
     marginTop: 10,
   },
   
-  buttonText: {
-    color: '#fff',
-    fontSize: 16,
-    fontWeight: 'bold',
-    textTransform: 'uppercase', 
-  },
 });
 
 export default styles;

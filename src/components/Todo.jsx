@@ -1,4 +1,4 @@
-import { View, Text, Button } from 'react-native';
+import { View, Text, TouchableOpacity  } from 'react-native';
 
 import styles from '../../AppStyles.js'
 
@@ -10,8 +10,12 @@ const Todo = ({ todo, removeTodo, completeTodo }) => {
         <Text style={styles.category}>({todo.category})</Text>
       </View>
       <View style={styles.buttons}>
-        <Button title="Completar" onPress={() => completeTodo(todo.id)} />
-        <Button title="x" onPress={() => removeTodo(todo.id)} />
+        <TouchableOpacity style={styles.completeButton} onPress={() => completeTodo(todo.id)}>
+          <Text style={styles.buttonText}>Completar</Text>
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.removeButton} onPress={() => removeTodo(todo.id)}>
+          <Text style={styles.buttonText}>x</Text>
+        </TouchableOpacity>
       </View>
     </View>
   );
